@@ -9,4 +9,4 @@ const connectDB = async () => {
 
 export default connectDB;
 
-// Do not use '@' symbol in your databse user's password else it will show an error.
+// Do not use '@' symbol in your databse user's password else it will show an error.d
