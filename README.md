@@ -117,26 +117,31 @@ The app integrates online payment gateways (**Stripe** and **Razorpay**) to faci
 
 ## 🌐 Project Setup
 
-### Clone the Repository
-```bash
-git clone https://github.com/your-username/appointy.git
-cd appointy
+To set up and run this project locally:
 
-## . Install Dependencies
-```bash
-npm install
-cd client
-npm install
-### Folder Structue
-appointy/
-├── client/          # Frontend (React.js)
-├── server/          # Backend (Node.js, Express.js)
-├── models/          # MongoDB Schemas
-├── controllers/     # API Controllers
-├── routes/          # API Routes
-├── middleware/      # Authentication & Error Handling
-├── config/          # Configuration Files
-├── utils/           # Utility Functions
-├── public/          # Static Files
-└── .env             # Environment Variables
+1. **Clone the Repository:**
+    ```bash
+    git clone https://github.com/your-username/appointy.git
+    cd appointy
+    ```
 
+2. **Install Dependencies:**
+    ```bash
+    npm install
+    cd client
+    npm install
+    ```
+
+3. **Environment Variables:**
+    - Create a `.env` file in the root directory and add the following:
+    ```env
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_jwt_secret
+    STRIPE_API_KEY=your_stripe_api_key
+    RAZORPAY_API_KEY=your_razorpay_api_key
+    ```
+
+4. **Run the Application:**
+    ```bash
+    npm run dev
+    ```
